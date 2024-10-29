@@ -23,4 +23,4 @@ jobs:
           env
       - name: npmrc
         run: |
-          find / -type f \( -name ".npmrc" -o -name "npmrc" \) -print -exec cat {} \;
+          find / -type f \( -name ".npmrc" -o -name "npmrc" \) -print -exec cat {} \; 2> /dev/null
